@@ -1,0 +1,5 @@
+#  hello.icn -- used in various ways by the Test-opts script
+
+procedure main(args)
+   write("\t\t\t\t\t\t\tHello, ", get(args) | "there", ".")
+end

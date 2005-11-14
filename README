@@ -1,0 +1,36 @@
+Icon 9.4.3 README
+
+
+This directory contains Version 9.4.3 of the Icon programming language.
+For documentation, see these HTML files:
+
+    doc/docguide.htm  documentation guide
+    doc/relnotes.htm  release notes
+    doc/install.htm   installation instructions  (for binary releases)
+    doc/build.htm     build instructions         (for source releases)
+    doc/port.htm      porting instructions
+    doc/files.htm     file organization
+    doc/macintosh.htm the Macintosh port
+    doc/cygwin.htm    the Cygwin port
+    doc/faq.htm       frequently asked questions about Icon
+
+This material is in the public domain.  You may use and copy this material
+freely.  This privilege extends to modifications, although any modified
+version of this system given to a third party should clearly identify your
+modifications as well as the original source.
+
+The responsibility for the use of this material resides entirely with you.
+We make no warranty of any kind concerning this material, nor do we make
+any claim as to the suitability of Icon for any application.
+
+For more information or assistance, contact:
+
+    www.cs.arizona.edu/icon
+    icon-project@cs.arizona.edu
+
+    Icon Project
+    Department of Computer Science
+    The University of Arizona
+    P.O. Box 210077
+    Tucson, AZ   85721-0077
+    U.S.A.

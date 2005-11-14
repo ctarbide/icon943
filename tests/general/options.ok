@@ -1,0 +1,20 @@
+Translating:
+hello.icn:
+  main
+No errors
+Linking:
+Executing:
+							Hello, there.
+							Hello, north.
+							Hello, south.
+							Hello, east.
+             :       main(list_1 = ["west"])
+							Hello, west.
+hello.icn    :    5  main failed
+							Hello, Tucson.
+							Hello, Pima.
+							Hello, Arizona.
+							Hello, world.
+							Hello, galaxy.
+							Hello, universe.
+HOWDY!

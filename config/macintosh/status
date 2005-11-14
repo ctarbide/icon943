@@ -1,0 +1,43 @@
+System configuration:
+
+	Apple Macintosh running OS X (10.1 or newer)
+
+Latest Icon version:
+
+	Version 9.4.3
+
+Installer:
+
+	Gregg Townsend
+	Icon Project
+	The University of Arizona
+
+Missing features:
+
+	None
+
+Known bugs:
+
+	None
+
+Comments:
+
+	See the special Macintosh page in the documentation directory.
+
+	Icon runs on Darwin, which is (loosely speaking) the
+	command-line-based Unix substructure of MacOS X.  The
+	Xcode Developer Tools must be installed.  (These come
+	with MacOS on a CD that is not always installed.)
+
+	An Icon installation with graphics requires the X11 window
+	system, available from Apple but not always installed.
+	To install Icon without graphics, use "make Configure"
+	instead of "make X-Configure" when building.
+
+	This configuration can use pthreads for context switching.
+
+	Tested with MacOS 10.4.3 (Tiger).
+
+Date:
+
+	November 10, 2005

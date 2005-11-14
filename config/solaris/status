@@ -1,0 +1,32 @@
+System configuration:
+
+	Sun Solaris using GNU C compiler
+
+Latest Icon version:
+
+	Version 9.4.3
+
+Installer:
+
+	Gregg Townsend
+	Icon Project
+	The University of Arizona
+	(with thanks to Andreas Almroth)
+
+Missing features:
+
+	None
+
+Known bugs:
+
+	None
+
+Comments:
+
+	Tested on SPARC Solaris 2.6 (SunOS 5.6) with gcc version 2.95.3.
+	Tested on SPARC Solaris 9 (SunOS 5.9) with gcc version 3.4.1.
+	Tested on x86 Schillix 0.2.1 with gcc version 3.4.3.
+
+Date:
+
+	November 10, 2005
