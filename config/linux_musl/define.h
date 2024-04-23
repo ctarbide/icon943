@@ -1,5 +1,5 @@
 /*
- * Icon configuration file for the GNU Hurd system
+ * Icon configuration file for Linux
  */
 
 #define UNIX 1

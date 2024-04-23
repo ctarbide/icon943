@@ -1,0 +1,41 @@
+System configuration:
+
+	Linux (on all hardware platforms)
+
+Latest Icon version:
+
+	Version 9.4.3
+
+Installer:
+
+	Gregg Townsend
+	Icon Project
+	The University of Arizona
+
+	with special thanks to Christian Hudon for additional testing
+
+Missing features:
+
+	None
+
+Known bugs:
+
+	None on x86, amd64, Alpha, SPARC, ARM, s390, or m68k.
+
+	On PowerPC: Large integers don't work; the cause is unknown.
+
+	On HP PA-RISC architecture:  Icon is not functional.  For
+	reasons that are not understood, real (floating-point)
+	values do not work.
+
+Comments:
+
+	Tested on x86 and amd64 architectures under Red Hat 9,
+	Fedora 3, and Fedora 4.
+
+	This configuration can use pthreads for context switching.
+	On some architectures that is the only option.
+
+Date:
+
+	November 8, 2005

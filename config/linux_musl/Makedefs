@@ -9,14 +9,11 @@
 #  GDIR     directory of graphics helper library
 
 CC = gcc
-CFLAGS = -O
-CFDYN = -fpic
+CFLAGS = -O -D_MUSL
+CFDYN = -fPIC
 RLINK = -Wl,-E
-RLIBS = -lm
-TLIBS =
-XLIBS = -luser32 -lgdi32 -lcomdlg32 -lwinmm
-XPMDEFS =
-GDIR = wincap
-
-#  EXE      extension for executable files
-EXE = .exe
+RLIBS = -lm -ldl
+TLIBS = -lpthread
+XLIBS = -L/usr/X11R6/lib64 -L/usr/X11R6/lib -lX11
+XPMDEFS = -DZPIPE
+GDIR = xpm
