@@ -147,7 +147,7 @@ void		xmfree		(void);
    struct b_bignum *alcbignum	(word n);
    word		bigradix	(int sign, int r, char *s, char *x,
 						   union numeric *result);
-   double	bigtoreal	(dptr da);
+   int		bigtoreal	(dptr da, double *d);
    int		realtobig	(dptr da, dptr dx);
    int		bigtos		(dptr da, dptr dx);
    void		bigprint	(FILE *f, dptr da);

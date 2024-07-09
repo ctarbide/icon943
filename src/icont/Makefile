@@ -21,7 +21,7 @@ COBJS =		../common/long.o ../common/getopt.o ../common/alloc.o \
 icont:		$(OBJS) $(COBJS)
 		$(CC) $(CFLAGS) $(LDFLAGS) -o icont $(OBJS) $(COBJS)
 		cp icont ../../bin
-		strip ../../bin/icont$(EXE)
+		: strip ../../bin/icont$(EXE)
 		(cd ../../bin; rm -f icon; ln -s icont icon)
 
 $(OBJS):	$(HFILES) tproto.h

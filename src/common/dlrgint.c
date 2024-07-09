@@ -25,10 +25,12 @@ dptr da;
 /*
  *  bignum -> real
  */
-double bigtoreal(da)
+int bigtoreal(da, d)
 dptr da;
+double *d;
    {
-   return 0.0;
+   *d = 0.0;
+   return 0;
    }
 
 /*

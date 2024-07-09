@@ -1,0 +1,13 @@
+/Makedefs
+/lib/*.u[12]
+/src/common/*.o
+/src/icont/*.o
+/src/rtt/*.o
+/src/runtime/*.o
+/ipl/cfuncs/*.o
+/ipl/cfuncs/*.so
+/ipl/cfuncs/*.u[12]
+/tests/general/*.out
+/tests/general/features
+/tests/general/foo.baz
+/src/runtime/x*.c

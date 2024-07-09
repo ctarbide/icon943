@@ -41,232 +41,232 @@ iconx: $(OBJS)
 	cd ../common; $(MAKE)
 	$(CC) $(RLINK) -o iconx  $(OBJS) $(XL) $(RLIBS) $(TL)
 	cp iconx ../../bin
-	strip $(SFLAGS) ../../bin/iconx$(EXE)
+	: strip $(SFLAGS) ../../bin/iconx$(EXE)
 
 xcnv.o: cnv.r $(HDRS)
-	../../bin/rtt -x cnv.r
+	../../bin/rtt -x -P cnv.r
 	$(CC) -c $(CFLAGS) xcnv.c
-	rm xcnv.c
+	: rm xcnv.c
 
 xdata.o: data.r $(HDRS) ../h/kdefs.h ../h/fdefs.h ../h/odefs.h
-	../../bin/rtt -x data.r
+	../../bin/rtt -x -P data.r
 	$(CC) -c $(CFLAGS) xdata.c
-	rm xdata.c
+	: rm xdata.c
 
 xdef.o: def.r $(HDRS)
-	../../bin/rtt -x def.r
+	../../bin/rtt -x -P def.r
 	$(CC) -c $(CFLAGS) xdef.c
-	rm xdef.c
+	: rm xdef.c
 
 xerrmsg.o: errmsg.r $(HDRS)
-	../../bin/rtt -x errmsg.r
+	../../bin/rtt -x -P errmsg.r
 	$(CC) -c $(CFLAGS) xerrmsg.c
-	rm xerrmsg.c
+	: rm xerrmsg.c
 
 xextcall.o: extcall.r $(HDRS)
-	../../bin/rtt -x extcall.r
+	../../bin/rtt -x -P extcall.r
 	$(CC) -c $(CFLAGS) xextcall.c
-	rm xextcall.c
+	: rm xextcall.c
 
 xfconv.o: fconv.r $(HDRS)
-	../../bin/rtt -x fconv.r
+	../../bin/rtt -x -P fconv.r
 	$(CC) -c $(CFLAGS) xfconv.c
-	rm xfconv.c
+	: rm xfconv.c
 
 xfload.o: fload.r $(HDRS)
-	../../bin/rtt -x fload.r
+	../../bin/rtt -x -P fload.r
 	$(CC) -c $(CFLAGS) xfload.c
-	rm xfload.c
+	: rm xfload.c
 
 xfmath.o: fmath.r $(HDRS)
-	../../bin/rtt -x fmath.r
+	../../bin/rtt -x -P fmath.r
 	$(CC) -c $(CFLAGS) xfmath.c
-	rm xfmath.c
+	: rm xfmath.c
 
 xfmisc.o: fmisc.r $(HDRS)
-	../../bin/rtt -x fmisc.r
+	../../bin/rtt -x -P fmisc.r
 	$(CC) -c $(CFLAGS) xfmisc.c
-	rm xfmisc.c
+	: rm xfmisc.c
 
 xfmonitr.o: fmonitr.r $(HDRS)
-	../../bin/rtt -x fmonitr.r
+	../../bin/rtt -x -P fmonitr.r
 	$(CC) -c $(CFLAGS) xfmonitr.c
-	rm xfmonitr.c
+	: rm xfmonitr.c
 
 xfscan.o: fscan.r $(HDRS)
-	../../bin/rtt -x fscan.r
+	../../bin/rtt -x -P fscan.r
 	$(CC) -c $(CFLAGS) xfscan.c
-	rm xfscan.c
+	: rm xfscan.c
 
 xfstr.o: fstr.r $(HDRS)
-	../../bin/rtt -x fstr.r
+	../../bin/rtt -x -P fstr.r
 	$(CC) -c $(CFLAGS) xfstr.c
-	rm xfstr.c
+	: rm xfstr.c
 
 xfstranl.o: fstranl.r $(HDRS)
-	../../bin/rtt -x fstranl.r
+	../../bin/rtt -x -P fstranl.r
 	$(CC) -c $(CFLAGS) xfstranl.c
-	rm xfstranl.c
+	: rm xfstranl.c
 
 xfstruct.o: fstruct.r $(HDRS)
-	../../bin/rtt -x fstruct.r
+	../../bin/rtt -x -P fstruct.r
 	$(CC) -c $(CFLAGS) xfstruct.c
-	rm xfstruct.c
+	: rm xfstruct.c
 
 xfsys.o: fsys.r $(HDRS)
-	../../bin/rtt -x fsys.r
+	../../bin/rtt -x -P fsys.r
 	$(CC) -c $(CFLAGS) xfsys.c
-	rm xfsys.c
+	: rm xfsys.c
 
 xfwindow.o: fwindow.r $(HDRS) $(GRAPHICSHDRS)
-	../../bin/rtt -x fwindow.r
+	../../bin/rtt -x -P fwindow.r
 	$(CC) -c $(CFLAGS) xfwindow.c
-	rm xfwindow.c
+	: rm xfwindow.c
 
 ximain.o: imain.r $(HDRS) ../h/version.h
-	../../bin/rtt -x imain.r
+	../../bin/rtt -x -P imain.r
 	$(CC) -c $(CFLAGS) ximain.c
-	rm ximain.c
+	: rm ximain.c
 
 ximisc.o: imisc.r $(HDRS)
-	../../bin/rtt -x imisc.r
+	../../bin/rtt -x -P imisc.r
 	$(CC) -c $(CFLAGS) ximisc.c
-	rm ximisc.c
+	: rm ximisc.c
 
 xinit.o: init.r $(HDRS) ../h/odefs.h ../h/version.h
-	../../bin/rtt -x init.r
+	../../bin/rtt -x -P init.r
 	$(CC) -c $(CFLAGS) xinit.c
-	rm xinit.c
+	: rm xinit.c
 
 xinterp.o: interp.r $(HDRS)
-	../../bin/rtt -x interp.r
+	../../bin/rtt -x -P interp.r
 	$(CC) -c $(CFLAGS) xinterp.c
-	rm xinterp.c
+	: rm xinterp.c
 
 xinvoke.o: invoke.r $(HDRS)
-	../../bin/rtt -x invoke.r
+	../../bin/rtt -x -P invoke.r
 	$(CC) -c $(CFLAGS) xinvoke.c
-	rm xinvoke.c
+	: rm xinvoke.c
 
 xkeyword.o: keyword.r $(HDRS) ../h/features.h ../h/version.h
-	../../bin/rtt -x keyword.r
+	../../bin/rtt -x -P keyword.r
 	$(CC) -c $(CFLAGS) xkeyword.c
-	rm xkeyword.c
+	: rm xkeyword.c
 
 xlmisc.o: lmisc.r $(HDRS)
-	../../bin/rtt -x lmisc.r
+	../../bin/rtt -x -P lmisc.r
 	$(CC) -c $(CFLAGS) xlmisc.c
-	rm xlmisc.c
+	: rm xlmisc.c
 
 xoarith.o: oarith.r $(HDRS)
-	../../bin/rtt -x oarith.r
+	../../bin/rtt -x -P -P oarith.r
 	$(CC) -c $(CFLAGS) xoarith.c
-	rm xoarith.c
+	: rm xoarith.c
 
 xoasgn.o: oasgn.r $(HDRS)
-	../../bin/rtt -x oasgn.r
+	../../bin/rtt -x -P oasgn.r
 	$(CC) -c $(CFLAGS) xoasgn.c
-	rm xoasgn.c
+	: rm xoasgn.c
 
 xocat.o: ocat.r $(HDRS)
-	../../bin/rtt -x ocat.r
+	../../bin/rtt -x -P ocat.r
 	$(CC) -c $(CFLAGS) xocat.c
-	rm xocat.c
+	: rm xocat.c
 
 xocomp.o: ocomp.r $(HDRS)
-	../../bin/rtt -x ocomp.r
+	../../bin/rtt -x -P ocomp.r
 	$(CC) -c $(CFLAGS) xocomp.c
-	rm xocomp.c
+	: rm xocomp.c
 
 xomisc.o: omisc.r $(HDRS)
-	../../bin/rtt -x omisc.r
+	../../bin/rtt -x -P omisc.r
 	$(CC) -c $(CFLAGS) xomisc.c
-	rm xomisc.c
+	: rm xomisc.c
 
 xoref.o: oref.r $(HDRS)
-	../../bin/rtt -x oref.r
+	../../bin/rtt -x -P oref.r
 	$(CC) -c $(CFLAGS) xoref.c
-	rm xoref.c
+	: rm xoref.c
 
 xoset.o: oset.r $(HDRS)
-	../../bin/rtt -x oset.r
+	../../bin/rtt -x -P oset.r
 	$(CC) -c $(CFLAGS) xoset.c
-	rm xoset.c
+	: rm xoset.c
 
 xovalue.o: ovalue.r $(HDRS)
-	../../bin/rtt -x ovalue.r
+	../../bin/rtt -x -P ovalue.r
 	$(CC) -c $(CFLAGS) xovalue.c
-	rm xovalue.c
+	: rm xovalue.c
 
 xralc.o: ralc.r $(HDRS)
-	../../bin/rtt -x ralc.r
+	../../bin/rtt -x -P ralc.r
 	$(CC) -c $(CFLAGS) xralc.c
-	rm xralc.c
+	: rm xralc.c
 
 xrcoexpr.o: rcoexpr.r $(HDRS)
-	../../bin/rtt -x rcoexpr.r
+	../../bin/rtt -x -P rcoexpr.r
 	$(CC) -c $(CFLAGS) xrcoexpr.c
-	rm xrcoexpr.c
+	: rm xrcoexpr.c
 
 xrcomp.o: rcomp.r $(HDRS)
-	../../bin/rtt -x rcomp.r
+	../../bin/rtt -x -P rcomp.r
 	$(CC) -c $(CFLAGS) xrcomp.c
-	rm xrcomp.c
+	: rm xrcomp.c
 
 xrdebug.o: rdebug.r $(HDRS)
-	../../bin/rtt -x rdebug.r
+	../../bin/rtt -x -P rdebug.r
 	$(CC) -c $(CFLAGS) xrdebug.c
-	rm xrdebug.c
+	: rm xrdebug.c
 
 xrlrgint.o: rlrgint.r $(HDRS)
-	../../bin/rtt -x rlrgint.r
+	../../bin/rtt -x -P rlrgint.r
 	$(CC) -c $(CFLAGS) xrlrgint.c
-	rm xrlrgint.c
+	: rm xrlrgint.c
 
 xrmemmgt.o: rmemmgt.r $(HDRS)
-	../../bin/rtt -x rmemmgt.r
+	../../bin/rtt -x -P rmemmgt.r
 	$(CC) -c $(CFLAGS) xrmemmgt.c
-	rm xrmemmgt.c
+	: rm xrmemmgt.c
 
 xrmisc.o: rmisc.r $(HDRS)
-	../../bin/rtt -x rmisc.r
+	../../bin/rtt -x -P rmisc.r
 	$(CC) -c $(CFLAGS) xrmisc.c
-	rm xrmisc.c
+	: rm xrmisc.c
 
 xrstruct.o: rstruct.r $(HDRS)
-	../../bin/rtt -x rstruct.r
+	../../bin/rtt -x -P rstruct.r
 	$(CC) -c $(CFLAGS) xrstruct.c
-	rm xrstruct.c
+	: rm xrstruct.c
 
 xrsys.o: rsys.r $(HDRS)
-	../../bin/rtt -x rsys.r
+	../../bin/rtt -x -P rsys.r
 	$(CC) -c $(CFLAGS) xrsys.c
-	rm xrsys.c
+	: rm xrsys.c
 
 xrwinrsc.o: rwinrsc.r $(HDRS) $(GRAPHICSHDRS) rxrsc.ri
-	../../bin/rtt -x rwinrsc.r
+	../../bin/rtt -x -P rwinrsc.r
 	$(CC) -c $(CFLAGS) xrwinrsc.c
-	rm xrwinrsc.c
+	: rm xrwinrsc.c
 
 xrwinsys.o: rwinsys.r $(HDRS) $(GRAPHICSHDRS) rxwin.ri
-	../../bin/rtt -x rwinsys.r
+	../../bin/rtt -x -P rwinsys.r
 	$(CC) -c $(CFLAGS) xrwinsys.c
-	rm xrwinsys.c
+	: rm xrwinsys.c
 
 xrwindow.o: rwindow.r $(HDRS) $(GRAPHICSHDRS)
-	../../bin/rtt -x rwindow.r
+	../../bin/rtt -x -P rwindow.r
 	$(CC) -c $(CFLAGS) xrwindow.c
-	rm xrwindow.c
+	: rm xrwindow.c
 
 xrcolor.o: rcolor.r $(HDRS) $(GRAPHICSHDRS)
-	../../bin/rtt -x rcolor.r
+	../../bin/rtt -x -P rcolor.r
 	$(CC) -c $(CFLAGS) xrcolor.c
-	rm xrcolor.c
+	: rm xrcolor.c
 
 xrimage.o: rimage.r $(HDRS) $(GRAPHICSHDRS)
-	../../bin/rtt -x rimage.r
+	../../bin/rtt -x -P rimage.r
 	$(CC) -c $(CFLAGS) xrimage.c
-	rm xrimage.c
+	: rm xrimage.c
 
 
 ####################################################################

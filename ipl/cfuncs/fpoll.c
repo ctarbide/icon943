@@ -68,6 +68,10 @@ int fpoll(int argc, descriptor *argv)	/*: await data from file */
 #elif defined(_FSTDIO)					/* new BSD library */
    if (f->_r > 0)
       RetArg(1);
+#elif defined(_MUSL)					/* MUSL library */
+   #include <stdio_ext.h>
+   if (__freadahead(f))
+      RetArg(1);
 #else							/* old AT&T library */
    if (f->_cnt > 0)
       RetArg(1);
