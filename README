@@ -6,9 +6,13 @@ what I do/study.
 
 Canonical location for this repository is [2].
 
+See [3] for backport acknowledgments
+
 - [1]: http://www2.cs.arizona.edu/icon/ftp/historic/v943.tgz
 
 - [2]: https://github.com/ctarbide/icon943
+
+- [3]: doc/relnotes.htm
 
 ****************************************************************
 

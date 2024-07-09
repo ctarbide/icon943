@@ -209,7 +209,30 @@ Nolan Clayton contributed revisions to the <CODE>img</CODE> program.
 Michael Glass contributed revisions to the <CODE>printf</CODE> procedure.
 Chris Tenaglia and Andreas Almroth contributed configuration files.
 
-<P> <HR>
+<H2> Backported from Version 9.5.1 of Icon </H2>
+
+<P> Pipes can now be opened in untranslated mode.
+
+<P> Some perfectly legal code has been tweaked to avoid provoking
+well-intentioned warning messages from C compilers.
+
+<H2> Backport Acknowledgments </H2>
+
+<P>
+Sean Jensen fixed an ancient bug in the lexer.
+
+<P>
+Cheyenne Wills provided the GNU C library fix
+and the <CODE>musl</CODE> adaptation.
+
+<P>
+Arthur Eschenlauer provided the <CODE>linux_musl</CODE> configuration.
+
+<P>
+He and Cheyenne Wills both, independently, isolated a nasty bug
+in the string conversion of MinLong.
+
+<div style="height: 12ch">
 
 </BODY>
 </HTML>
