@@ -136,7 +136,7 @@ struct b_coexpr *alccoexp()
    {
    struct b_coexpr *ep;
    static int serial = 2; /* main co-expression is allocated elsewhere */
-   ep = (struct b_coexpr *)malloc(stksize);
+   ep = malloc(stksize);
 
    /*
     * If malloc failed or if there have been too many co-expression allocations
@@ -145,7 +145,8 @@ struct b_coexpr *alccoexp()
 
    if (ep == NULL || alcnum > AlcMax) {
       collect(Static);
-      ep = (struct b_coexpr *)malloc(stksize);
+      if (ep == NULL)
+	 ep = malloc(stksize);
       }
 
    if (ep == NULL)
@@ -186,16 +187,13 @@ struct b_coexpr *alccoexp()
 
 #ifdef MultiThread
    if (icodesize > 0) {
-      ep = (struct b_coexpr *)
-	calloc(1, stacksize+
-		       icodesize+
-		       sizeof(struct progstate)+
-		       sizeof(struct b_coexpr));
+      ep = calloc(1, stacksize + icodesize +
+	 sizeof(struct progstate) + sizeof(struct b_coexpr));
       }
    else
 #endif					/* MultiThread */
 
-   ep = (struct b_coexpr *)malloc(stksize);
+   ep = malloc(stksize);
 
    /*
     * If malloc failed or if there have been too many co-expression allocations
@@ -207,17 +205,18 @@ struct b_coexpr *alccoexp()
       collect(Static);
 
 #ifdef MultiThread
-      if (icodesize>0) {
-         ep = (struct b_coexpr *)
-	    malloc(mstksize+icodesize+sizeof(struct progstate));
+      if (icodesize > 0) {
+         ep = malloc(mstksize + icodesize + sizeof(struct progstate));
          }
       else
 #endif					/* MultiThread */
 
-         ep = (struct b_coexpr *)malloc(stksize);
+	 if (ep == NULL)
+	    ep = malloc(stksize);
       }
-      if (ep == NULL)
-         ReturnErrNum(305, NULL);
+
+   if (ep == NULL)
+      ReturnErrNum(305, NULL);
 
    alcnum++;		/* increment allocation count since last g.c. */
 
